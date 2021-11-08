@@ -1,7 +1,15 @@
 package org.example;
 
 public class CarFactory {
-    public Car createNewCar(String color) {
-        return new Car(color);
+    String brand;
+
+    public CarFactory(String brand) {
+        this.brand = brand;
     }
+
+    public Car createNewCar(String color) {
+        return new Car(color, this.brand);
+    }
+
+
 }
