@@ -1,7 +1,7 @@
 package org.example;
 
 public class CarFactory {
-    public Car createNewCar() {
-        return new Car();
+    public Car createNewCar(String color) {
+        return new Car(color);
     }
 }
